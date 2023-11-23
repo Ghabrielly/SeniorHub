@@ -28,10 +28,10 @@ fetch("http://localhost:8080/usuarios", {
         telefone: Itelefone.value,
         nascimento: Inascimento.value,
         genero: Igenero.value,
-        endereco: Iendereco.value
-        hobbie:Ihobbie.value
-        supor: Isupor.value,
-        suport: Isuport.value,
+        endereco: Iendereco.value,
+        hobbie:Ihobbie.value,
+        supsim: Isupsim.value,
+        supnao: Isupnao.value,
         suporte: Isuporte.value,
         contato: Icontato.value,
         senha: Isenha.value,
@@ -87,42 +87,6 @@ limpar();
       return dataFormatada;
     }
 
-    // Função para buscar informações do CEP
-    function buscarCep() {
-      var cep = document.querySelector('.cep').value.replace(/\D/g, ''); // Remove caracteres não numéricos
-
-      if (cep.length !== 8) {
-        alert('CEP inválido');
-        return;
-      }
-
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://viacep.com.br/ws/' + cep + '/json/', true);
-
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          var data = JSON.parse(xhr.responseText);
-
-          if (!data.erro) {
-            document.querySelector('.estado').value = data.uf;
-            document.querySelector('.cidade').value = data.localidade;
-            document.querySelector('.municipio').value = data.bairro;
-          } else {
-            alert('CEP não encontrado');
-          }
-        } else {
-          alert('Erro ao buscar CEP');
-        }
-      };
-
-      xhr.send();
-    }
-
-    // Adiciona evento de blur para acionar a função ao sair do campo de CEP
-    document.querySelector('.cep').addEventListener('blur', function () {
-      buscarCep();
-    });
-
     // Adiciona evento de blur para formatar a data ao sair do campo de data
     document.querySelector('.nascimento').addEventListener('blur', function () {
       var dataFormatada = formatarData(this.value);
@@ -130,7 +94,5 @@ limpar();
         this.value = dataFormatada;
       }
     });
-
-    // ... Outros scripts ou funções que você possa ter ...
 
   });
