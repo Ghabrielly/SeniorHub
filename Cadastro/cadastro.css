@@ -37,6 +37,7 @@ margin-right: auto; }
     display: flex;
     height: 10vh;
     width: 80vh;
+    font-family: 'Playpen Sans', cursive;
 }
 
 #formulario_box {
