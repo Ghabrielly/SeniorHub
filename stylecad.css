@@ -1,0 +1,85 @@
+input {
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-around;
+    width: 76%;
+}
+
+.formulario> :first-child {
+    margin-right: auto;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+#sim_nao {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#titulo h1 {
+    display: flex;
+    border: 1px solid;
+    border-color: aqua;
+    height: 10vh;
+    width: 50vh;
+}
+
+#formulario_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center left 10px;
+    justify-content: space-between;
+}
+
+#check {
+    display: flex;
+    flex-direction: row;
+    width: 76%;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dois {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 39%;
+    height: 30px;
+}
+
+#formsup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#supsim {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#supnao {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
