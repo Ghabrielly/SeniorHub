@@ -6,8 +6,6 @@ const Iusuario = document.querySelector(".usuario");
 const Iemail = document.querySelector(".email");
 const Itelefone = document.querySelector(".telefone");
 const Inascimento= document.querySelector(".nascimento");
-const Iestado = document.querySelector(".estado");
-const Icidade = document.querySelector(".cidade");
 const Igenero = document.querySelector(".genero");
 const Iendereco = document.querySelector(".endereco");
 const Ihobbie = document.querySelector(".hobbie");
@@ -29,8 +27,6 @@ fetch("http://localhost:8080/usuarios", {
         email: Iemail.value,
         telefone: Itelefone.value,
         nascimento: Inascimento.value,
-        estado: Iestado.value,
-        cidade: Icidade.value,
         genero: Igenero.value,
         endereco: Iendereco.value
         hobbie:Ihobbie.value
@@ -52,8 +48,6 @@ Isuario.value = "";
 Iemail.value = "";
 Itelefone.value = "";
 Inascimento.value = "";
-Iestado.value = "";
-Icidade.value = "";
 Igenero.value = "";
 Iendereco.value = "";
 Ihobbie.value = "";
