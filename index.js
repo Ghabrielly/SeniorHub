@@ -28,8 +28,8 @@ fetch("http://localhost:8080/usuarios", {
         telefone: Itelefone.value,
         nascimento: Inascimento.value,
         genero: Igenero.value,
-        endereco: Iendereco.value
-        hobbie:Ihobbie.value
+        endereco: Iendereco.value,
+        hobbie:Ihobbie.value,
         supor: Isupor.value,
         suport: Isuport.value,
         suporte: Isuporte.value,
