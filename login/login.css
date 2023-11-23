@@ -1,0 +1,102 @@
+
+body {
+    background-color: #f9f9f4;
+}
+
+input {
+    border: solid 1px black;
+    display: flex;
+    width: 150%;
+    height: 60px;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+
+button {
+    border: solid black 1px;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    cursor: pointer; 
+    
+}
+
+#box {
+    display: flex;
+    background-color: #0017B2;
+    height: 70px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+#Camada_1 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.borda {
+    border: solid 1px black;
+    display: flex;
+    width: 90%;
+    height: 60px;
+    margin-right: auto;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 8px;
+    background-color: white;
+    margin-left: auto;
+}
+
+#esperando {
+    border: 1px black solid;
+    border-radius: 10px;
+    height: 60px;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+#centro {
+    border: 1px black solid;
+    height: 70vh;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+#um {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-right: 100px;
+
+}
+
+#dois {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+#arrumar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    height: 58vh;
+    align-items: center;
+}
