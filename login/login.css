@@ -1,6 +1,7 @@
 
 body {
     background-color: #f9f9f4;
+    font-family: 'Playpen Sans', cursive;
 }
 
 input {
@@ -12,6 +13,7 @@ input {
     padding-left: 10px;
     border-radius: 8px;
     background-color: white;
+    font-family: 'Playpen Sans', cursive;
 }
 
 
@@ -22,7 +24,7 @@ button {
     height: 70px;
     border-radius: 10px;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Playpen Sans', cursive;
     background-color: white;
     cursor: pointer; 
     

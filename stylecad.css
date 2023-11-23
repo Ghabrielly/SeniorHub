@@ -1,5 +1,6 @@
 body {
     background-color: #f9f9f4;
+    font-family: 'Playpen Sans', cursive;
 
 }
 
@@ -9,6 +10,7 @@ input {
     border: 1px solid gray;
     padding-left: 10px;
     margin-top: 5px;
+    font-family: 'Playpen Sans', cursive;
 }
 
 .formulario {
@@ -29,6 +31,7 @@ input {
     width: 400px;
     margin-bottom: 40px;
     margin-top: 10px;
+    font-family: 'Playpen Sans', cursive;
 }
 
 #sim_nao {
@@ -41,6 +44,7 @@ input {
     display: flex;
     height: 10vh;
     width: 50vh;
+    font-family: 'Playpen Sans', cursive;
 }
 
 #formulario_box {
@@ -106,14 +110,4 @@ input {
     width: 50px;
     height: 50px;
     display: flex;
-}
-
-#esperando {
-    border: 1px black solid;
-    border-radius: 10px;
-    height: 60px;
-    width: 99%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
 }
