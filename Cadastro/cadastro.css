@@ -1,4 +1,6 @@
-
+body {
+    background-color: #f9f9f4;
+}
 input {
     height: 45px;
     border-radius: 10px;
@@ -33,10 +35,8 @@ margin-right: auto; }
 
 #titulo h1{
     display: flex;
-    border: 1px solid;
-    border-color: aqua;
     height: 10vh;
-    width: 50vh;
+    width: 80vh;
 }
 
 #formulario_box {
@@ -63,4 +63,29 @@ margin-right: auto; }
     justify-content: space-between;
     width: 39%;
     height: 30px;
+}
+
+#arrumar {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+}
+
+#box {
+    display: flex;
+    background-color: #0017B2;
+    height: 70px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+#Camada_1 {
+    width: 50px;
+    height: 50px;
+    display: flex;
 }
