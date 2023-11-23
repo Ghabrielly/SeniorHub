@@ -29,9 +29,11 @@ fetch("http://localhost:8080/usuarios", {
         nascimento: Inascimento.value,
         genero: Igenero.value,
         endereco: Iendereco.value,
-        hobbie:Ihobbie.value,
-        supsim: Isupsim.value,
+        hobbie:Ihobbie.value
+        supsim: Isupsim.value
         supnao: Isupnao.value,
+        supor: Isupor.value,
+        suport: Isuport.value,
         suporte: Isuporte.value,
         contato: Icontato.value,
         senha: Isenha.value,
