@@ -85,8 +85,16 @@
 }
 
 #arrumar {
-    border: solid black 1px;
+    display: flex;
+    flex-direction: row;
 
+}
 
-
+#ajustar {
+    display: flex;
+    font-size: large;
+    font-family: 'Playpen Sans', cursive;
+    align-items: center;
+    padding-left: 10px ;
+    padding-right: 10px;
 }
