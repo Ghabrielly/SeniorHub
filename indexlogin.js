@@ -5,7 +5,7 @@ const Ilogin = document.querySelector(".login");
 const Isenha = document.querySelector(".senha");
 
 function cadastrar() {
-fetch("http://localhost:8080/usuarios", {
+fetch("http://localhost:8080/login", {
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json' 
