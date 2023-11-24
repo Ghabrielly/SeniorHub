@@ -103,3 +103,7 @@ button {
     cursor: pointer; 
     margin-right: 10px;
 }
+
+::placeholder {
+    font-family: 'Playpen Sans', cursive;
+}
