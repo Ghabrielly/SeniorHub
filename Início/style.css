@@ -1,9 +1,7 @@
-<<<<<<< HEAD
+HEAD
 body {
     font-family: 'Playpen Sans', cursive;
 }
-=======
->>>>>>> 41aeb1b68dc7da4d7ad29f6b7f8477c3e8c293d2
 
 #logoam {
     display: flex;
@@ -89,7 +87,7 @@ body {
 #fundopag {
     background-color: rgb(245, 227, 227);
     border-radius: 10px;
-<<<<<<< HEAD
+
     display: flex;
     flex-direction: row;
 }
@@ -131,5 +129,4 @@ body {
     font-size: medium;
     margin-top: 13px;
     padding-left: 10px;
->>>>>>> 41aeb1b68dc7da4d7ad29f6b7f8477c3e8c293d2
 }
