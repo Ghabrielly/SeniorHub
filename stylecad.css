@@ -19,6 +19,7 @@ input {
     align-items: left;
     justify-content: space-around;
     width: 76%;
+    margin-left: 160px;
 }
 
 .formulario> :first-child {
@@ -45,6 +46,7 @@ input {
     height: 10vh;
     width: 50vh;
     font-family: 'Playpen Sans', cursive;
+    margin-left: 500px;
 }
 
 #formulario_box {
@@ -93,6 +95,7 @@ input {
 
 #formsup {
     margin-bottom: 40px;
+    margin-left: 160px;
 
 }
 
@@ -120,8 +123,9 @@ button {
     font-family: 'Playpen Sans', cursive;
     background-color: white;
     cursor: pointer; 
-    margin-right: 10px;
+    margin-left: 565px;
 }
 ::placeholder {
     font-family: 'Playpen Sans', cursive;
 }
+

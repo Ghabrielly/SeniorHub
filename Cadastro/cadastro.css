@@ -15,6 +15,7 @@ input {
     align-items: left;
     justify-content: space-around;
     width: 76%;
+    margin-left: 160px;
 }
 
 .formulario > :first-child {
@@ -39,6 +40,7 @@ margin-right: auto; }
     height: 10vh;
     width: 80vh;
     font-family: 'Playpen Sans', cursive;
+    margin-left: 400px;
 }
 
 #formulario_box {
@@ -101,9 +103,19 @@ button {
     font-family: 'Playpen Sans', cursive;
     background-color: white;
     cursor: pointer; 
-    margin-right: 10px;
+    margin-left: 565px;
 }
 
 ::placeholder {
     font-family: 'Playpen Sans', cursive;
+}
+
+#especialização {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 50%;
+    height: 60%;
+    margin-top: 25px;
 }
