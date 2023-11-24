@@ -16,7 +16,7 @@ const Iespecializacao = document.querySelector(".especializacao");
 const Isenha = document.querySelector(".senha");
 
 function cadastrar() {
-fetch("http://localhost:8080/usuarios", {
+fetch("http://localhost:8080/cadastro-acompanhante", {
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json' 
