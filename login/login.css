@@ -93,3 +93,7 @@ button {
     height: 58vh;
     align-items: center;
 }
+
+::placeholder {
+    font-family: 'Playpen Sans', cursive;
+}

@@ -106,3 +106,7 @@ button {
     display: flex;
     height: 58vh;
 }
+
+::placeholder {
+    font-family: 'Playpen Sans', cursive;
+}
