@@ -103,21 +103,6 @@ input {
 
 }
 
-#box {
-    display: flex;
-    background-color: #0017B2;
-    height: 70px;
-    border-radius: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 50px;
-}
-
-#Camada_1 {
-    width: 50px;
-    height: 50px;
-    display: flex;
-}
 button {
     border: solid black 1px;
     width: 200px;
@@ -135,3 +120,48 @@ button {
     font-family: 'Playpen Sans', cursive;
 }
 
+#box {
+    display: flex;
+    background-color: #0017B2;
+    height: 70px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#Camada_1 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+#botaoAgendamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botaoEventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botaoPerfilEscrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
