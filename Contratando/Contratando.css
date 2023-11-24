@@ -34,9 +34,10 @@ button {
     background-color: #0017B2;
     height: 70px;
     border-radius: 10px;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 #Camada_1 {
@@ -62,28 +63,33 @@ button {
 #centro {
     border: 1px black solid;
     height: 75vh;
-    width: 50%;
+    width: 50vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #um {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    margin-left: 30px;
-    margin-right: 100px;
+    align-items: center;
 }
 
 #dois {
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 90px;
-    
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #arrumar {
@@ -96,4 +102,40 @@ button {
 
 ::placeholder {
     font-family: 'Playpen Sans', cursive;
+}
+
+#botaoContinuar button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaoAgendamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botaoEventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botaoPerfilEscrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

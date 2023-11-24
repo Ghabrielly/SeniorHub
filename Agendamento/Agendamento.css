@@ -25,9 +25,10 @@ button {
     background-color: #0017B2;
     height: 70px;
     border-radius: 10px;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 #Camada_1 {
@@ -35,7 +36,6 @@ button {
     height: 50px;
     display: flex;
 }
-
 
 #inicio {
     display: flex;
@@ -51,7 +51,7 @@ button {
     flex-direction: column;
     justify-content: space-around;
     height: 30vh;
-    width: auto;
+    width: 70%;
     border-radius: 8px;
     margin-top: 10px;
     background-color:#f9f9f9;
@@ -67,7 +67,7 @@ button {
     flex-direction: row;
     align-items: left;
     justify-content: space-between;
-
+    
 }
 
 .dois {
@@ -82,3 +82,38 @@ button {
 
 }
 
+#tudo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#botaoAgendamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botaoEventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botaoPerfilEscrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
