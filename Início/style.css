@@ -1,3 +1,7 @@
+body {
+    font-family: 'Playpen Sans', cursive;
+}
+
 #logoam {
     display: flex;
     size: 10%;
@@ -82,4 +86,17 @@
 #fundopag {
     background-color: rgb(245, 227, 227);
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fundopagesq{
+    width: 70%;
+}
+
+.fundopagdir{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 75px;
 }
