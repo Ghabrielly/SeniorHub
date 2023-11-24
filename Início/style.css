@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 body {
     font-family: 'Playpen Sans', cursive;
 }
+=======
+>>>>>>> 41aeb1b68dc7da4d7ad29f6b7f8477c3e8c293d2
 
 #logoam {
     display: flex;
@@ -86,6 +89,7 @@ body {
 #fundopag {
     background-color: rgb(245, 227, 227);
     border-radius: 10px;
+<<<<<<< HEAD
     display: flex;
     flex-direction: row;
 }
@@ -99,4 +103,33 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 75px;
+=======
+}
+
+#fim {
+    border: solid 1px black;
+    height: 60px;
+    width: 99%;
+    border-radius: 10px;
+    background-color: #0017B2;
+    color: white;
+    display: flex;
+    align-items: first baseline;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#bottom {
+    border: 1px solid black;
+    background-color: #3F81FB;
+    height: 30px;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: medium;
+    margin-top: 13px;
+    padding-left: 10px;
+>>>>>>> 41aeb1b68dc7da4d7ad29f6b7f8477c3e8c293d2
 }

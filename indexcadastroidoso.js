@@ -15,7 +15,7 @@ const Isuporte = document.querySelector(".suporte");
 const Isenha = document.querySelector(".senha");
 
 function cadastrar() {
-fetch("http://localhost:8080/usuarios", {
+fetch("http://localhost:8080/cadastro-idoso", {
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json' 
