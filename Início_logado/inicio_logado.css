@@ -24,7 +24,7 @@
     display: flex;
 }
 
-#botaomenu {
+#botaoAgendamento {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,20 +32,20 @@
     padding-right: 50px;
 }
 
-#botaoentre {
+#botaoEventos {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5px;
-    padding-right: 10px;
+    padding-right: 50px;
 }
 
-#ouestilo {
+#botaoPerfilEscrito {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5px;
-    padding-right: 10px;
+    padding-right: 50px;
 }
 
 #botaocad {
@@ -95,6 +95,6 @@
     font-size: large;
     font-family: 'Playpen Sans', cursive;
     align-items: center;
-    padding-left: 10px ;
+    padding-left: 10px;
     padding-right: 10px;
 }
