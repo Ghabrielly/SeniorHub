@@ -40,7 +40,8 @@ margin-right: auto; }
     height: 10vh;
     width: 80vh;
     font-family: 'Playpen Sans', cursive;
-    margin-left: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #formulario_box {
@@ -103,7 +104,9 @@ button {
     font-family: 'Playpen Sans', cursive;
     background-color: white;
     cursor: pointer; 
-    margin-left: 565px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ::placeholder {
