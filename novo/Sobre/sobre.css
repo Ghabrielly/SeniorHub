@@ -2,9 +2,17 @@ body {
     margin: 0;
 }
 
+a {text-decoration: none;}
+
 #img1 {
     width: 300px;
     height: auto;
+}
+#img2 {
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 p {
@@ -65,7 +73,7 @@ p {
     align-items: center;
     width:  1200px;
     height: 70px;
-
+    text-decoration: none;
 }
 
 .but {
@@ -81,10 +89,12 @@ p {
     font-size: large;
     border: none;
     font-family: sans-serif;
+    text-decoration: none;
 }
 
 .but:hover {
     background-color:#417FF5;
+    text-decoration: none;
  }
 
 #texto {
@@ -109,5 +119,7 @@ p {
 #imagem_texto {
     display: flex;
     flex-direction: row;
+    height: 280px;
+    border: solid 1px black;
 }
 
