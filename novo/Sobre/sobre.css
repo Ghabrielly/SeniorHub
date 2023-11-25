@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    overflow: hidden;
 }
 
 
@@ -25,7 +25,6 @@ body {
     display: flex;
     width: auto;
     height: 60px;
-    border: 1px black solid;
 }
 
 #barra {
