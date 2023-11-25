@@ -1,0 +1,136 @@
+body {
+    overflow: hidden;
+}
+
+input {
+    display: flex;
+        border: none;
+        border-radius: 15px;
+        width: 400px;
+        height: 60px;
+        padding-left: 10px;
+}
+
+label {
+    font-size: larger;
+    font-family: sans-serif;
+    padding-right: 10px;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+}
+
+.lado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: medium;
+    background-color: #080c4c;
+    color: white;
+    width: 250px;
+    height: 70px;
+    font-size: large;
+    border: none;
+    font-family: sans-serif;
+}
+.inicial:hover {
+   background-color:#2c5cac;
+}
+
+#logo {
+    display: flex;
+    width: auto;
+    height: 60px;
+    border: 1px black solid;
+}
+
+#barra {
+        display: flex;
+        width: auto;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #080c4c;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: calc(100vh - 150px); 
+    }
+
+    #esquerda {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 55%;
+        justify-content: space-around;
+        background-color: #ddebfb;
+    }
+    #direita {
+        display: flex;
+
+        align-items: center;
+        flex-direction: column;
+        width: 45%;
+        justify-content: space-around;
+    }
+
+    #bot1, #bot2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: medium;
+    }
+
+    #bot1 {
+        width: 160px;
+        height: 60px;
+        background-color: white;
+    }
+
+    #bot1:hover {
+        background-color: #ebebf3;
+    }
+
+    #bot2 {
+        width: 250px;
+        height: 60px;
+        background-color: #ebebf3;
+        margin-bottom: 10px;
+    }
+    #bot2:hover {
+        background-color: #bebebe;
+    }
+
+
+    #um {
+        font-size: 50px;
+        font-family: sans-serif;
+    }
+
+    #dois {
+        font-size: 45px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+  
