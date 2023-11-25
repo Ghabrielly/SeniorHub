@@ -1,0 +1,112 @@
+
+
+
+.inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: medium;
+    background-color: #080c4c;
+    color: white;
+    width: 250px;
+    height: 70px;
+    font-size: large;
+    border: none;
+    font-family: sans-serif;
+}
+.inicial:hover {
+   background-color:#2c5cac;
+}
+
+#logo {
+    display: flex;
+    width: auto;
+    height: 60px;
+    border: 1px black solid;
+}
+
+#barra {
+        display: flex;
+        width: auto;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #080c4c;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+#separar {
+    border: solid rgb(0, 0, 0) solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+
+}
+#esquerda {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+
+}
+#direita {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+}
+
+#tabela {
+    display: flex;
+    align-items: baseline;
+    border: rgb(196, 196, 196) solid 1px;
+    width:  600px;
+    height: 350px;
+    flex-direction: column;
+}
+
+#botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:  600px;
+    height: 70px;
+
+}
+
+.but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: medium;
+    background-color: #8cb4fc;
+    color: white;
+    width: 200px;
+    height: 70px;
+    font-size: large;
+    border: none;
+    font-family: sans-serif;
+}
+
+.but:hover {
+    background-color:#417FF5;
+ }
+
+#texto {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
