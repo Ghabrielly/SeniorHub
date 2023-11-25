@@ -19,11 +19,14 @@
    background-color:#2c5cac;
 }
 
+
+
 #logo {
     display: flex;
     width: auto;
     height: 60px;
     border: 1px black solid;
+    justify-content: center;
 }
 
 #barra {
