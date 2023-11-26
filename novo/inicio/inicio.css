@@ -1,4 +1,12 @@
+body {
+    margin: 0;
+}
 
+#img1 {
+    width: 320px;
+    height: 350px;
+    margin-top: 20px;
+}
 
 
 .inicial {
@@ -25,7 +33,6 @@
     display: flex;
     width: auto;
     height: 60px;
-    border: 1px black solid;
     justify-content: center;
 }
 
@@ -111,5 +118,10 @@
     padding-left: 10px;
     padding-right: 10px;
     font-size: 20px;
+    font-family: sans-serif;
+}
+
+#senior {
+    font-size: 70px;
     font-family: sans-serif;
 }
