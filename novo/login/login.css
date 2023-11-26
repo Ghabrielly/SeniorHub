@@ -2,7 +2,7 @@ body {
     overflow: hidden;
 }
 
-input {
+HEAD input {
     display: flex;
     border: none;
     border-radius: 15px;
@@ -138,4 +138,69 @@ p {
     font-size: 45px;
     font-family: sans-serif;
     text-align: center;
+
+    #corpo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border: 1px black solid;
+        height: 70vh;
+    }
+
+    #tronco {
+        display: flex;
+        flex-direction: row;
+        height: 70vh;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 50px;
+        border: #2c5cac solid 1px;
+        background-color: #d4e4ff;
+        border-radius: 50px;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    #login,
+    #cadastro,
+    #acompanhante {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: #080c4c 1px solid;
+        height: 300px;
+        width: 300px;
+    }
+
+    #login {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #form {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 150px;
+        width: auto;
+        border: #080c4c solid 1px;
+    }
+
+    #lado {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    input {
+        display: flex;
+        border: none;
+        border-radius: 10px;
+        width: 180px;
+        height: 30px;
+        font-size: 15px;
+    }
 }
