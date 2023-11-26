@@ -18,7 +18,7 @@ body {
     background-color: #080c4c;
     color: white;
     width: 250px;
-    height: 70px;
+    height: 50px;
     font-size: large;
     border: none;
     font-family: sans-serif;
@@ -26,8 +26,6 @@ body {
 .inicial:hover {
    background-color:#2c5cac;
 }
-
-
 
 #logo {
     display: flex;
@@ -39,92 +37,75 @@ body {
 }
 
 #barra {
-        display: flex;
-        width: auto;
-        height: 70px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #080c4c;
-        padding-left: 10px;
-        padding-right: 10px;
-}
-
-#separar {
-    border: solid rgb(0, 0, 0) solid;
     display: flex;
-    flex-direction: row;
+    width: auto;
+    height: 60px;
+    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 80vh;
-
-}
-#esquerda {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 40%;
-    height: auto;
-    border: 1px black solid;
-
-}
-#direita {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 60%;
-    height: auto;
-    justify-content: center;
-}
-
-#tabela {
-    display: flex;
-    align-items: baseline;
-    border: rgb(196, 196, 196) solid 1px;
-    width:  600px;
-    height: 350px;
-    flex-direction: column;
-}
-
-#botao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:  600px;
-    height: 70px;
-
-}
-
-.but {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: medium;
-    background-color: #8cb4fc;
-    color: white;
-    width: 200px;
-    height: 70px;
-    font-size: large;
-    border: none;
-    font-family: sans-serif;
-}
-
-.but:hover {
-    background-color:#417FF5;
- }
-
-#texto {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    height: 350px;
+    background-color: #080c4c;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 20px;
-    font-family: sans-serif;
 }
 
-#senior {
-    font-size: 70px;
-    font-family: sans-serif;
+#tamanho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
 }
+
+#cor {
+    display: flex;
+    flex-direction: row;
+    background-color: #c1c6f7;
+    height: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#branca {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#mov {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+#txt h1{
+    font-size: 40px;
+    
+}
+
+#txt{
+   margin-right: 80px;
+   color: white;
+   font-family: sans-serif;
+   display: flex;
+   flex-direction: column;
+}
+
+#foto {
+    height: 230px;
+}
+
+#txt2{
+    align-items: first baseline;
+    justify-content: center;
+    text-align: left;
+    margin-right: 80px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+ }
