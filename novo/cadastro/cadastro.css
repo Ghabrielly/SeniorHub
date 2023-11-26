@@ -1,3 +1,8 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
 .inicial {
     display: flex;
     align-items: center;
@@ -7,7 +12,7 @@
     background-color: #080c4c;
     color: white;
     width: 250px;
-    height: 70px;
+    height: 50px;
     font-size: large;
     border: none;
     font-family: sans-serif;
@@ -15,8 +20,6 @@
 .inicial:hover {
    background-color:#2c5cac;
 }
-
-
 
 #logo {
     display: flex;
@@ -28,12 +31,107 @@
 }
 
 #barra {
-        display: flex;
-        width: auto;
-        height: 70px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #080c4c;
-        padding-left: 10px;
-        padding-right: 10px;
+    display: flex;
+    width: auto;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080c4c;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+#titu {
+    border: #080c4c 1px solid;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: #cfd3fd;
+    font-family: sans-serif;
+}
+
+#centro {
+    display: flex;
+    height: calc(85vh - 80px);
+    width: 100%;
+    border: #080c4c 1px solid;
+}
+
+#direita {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    border: #080c4c 1px solid;
+}
+
+#txt {
+    display: flex;
+    align-items: center;
+    border: #080c4c 1px solid;
+    width: 85%;
+    height: 80%;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    align-items: first baseline;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#primeiro {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 60px;
+    width: 97.5%;
+    justify-content: last baseline;
+    
+    
+
+}
+
+.infos {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.junto {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+}
+
+#genero {
+    border: 1px black solid;
+    height: 32px;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+input {
+    border: 1px black solid;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+label {
+    display: flex;
+    margin-bottom: 3px;
+    font-family: sans-serif;
+}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,70 @@
     <link rel="stylesheet" href="cadastro.css">
     <link rel="shortcut icon" href="../Logos png/seniorHubLogoAzulClaroEscuro2.svg" type="image/x-icon">
 </head>
+
 <body>
-    <a href="inicio.html">
+    <a href="../inicio/inicio.html">
         <div id="logo"><img src="../../Logos png/seniorHubLogoAzulClaroEscuro.png" alt=""></div>
     </a>
     <div id="barra">
-        <a href=""><button class="inicial">Início</button></a>
-        <a href="../login/login.html"><button class="inicial">Login</button></a>
-        <a href="../Sobre/sobre.html"><button class="inicial">Sobre</button></a>
+        <a href="../inicio/inicio.html"><button class="inicial">Início</button></a>
+        <a href=""><button class="inicial">Cadastro</button></a>
+        <a href="../login/login.html"><button class="inicial">Voltar</button></a>
     </div>
-    
+
+    <div id="titu">
+        <h1>Cadastro Idoso</h1>
+    </div>
+    <div id="centro">
+        <div id="direita">
+            <div id="txt">
+                <h2>Informações básicas</h2>
+                <div id="form">
+                    <div id="primeiro">
+                        <label for="nome">Nome Completo:</label>
+                        <input id="nome1" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="infos">
+                        <div class="junto">
+                            <label for="usuario">Nome de usuário:</label>
+                            <input type="text" name="usuario" id="usuario" placeholder="Digite seu nome de usuário">
+                        </div>
+                        <div class="junto">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email">
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="junto">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                        </div>
+                        <div class="junto">
+                                <label for="endereco">Endereço:</label>
+                            <input type="text" name="endereco" id="endereco" placeholder="Digite sua data de endereço">
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="junto">
+                            <label for="genero">Selecione o gênero:</label>
+                            <select id="genero" name="genero">
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                            
+                        </div>
+                        <div class="junto">
+                            <label for="nascimento">Data de Nascimento:</label>
+                            <input type="date" name="nascimento" id="nascimento"
+                            placeholder="Digite sua data de nascimento">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="esquerda">
+            
+        </div>
+    </div>
