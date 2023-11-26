@@ -1,24 +1,7 @@
 body {
-    margin: 0;
+    overflow: hidden;
 }
 
-a {text-decoration: none;}
-
-#img1 {
-    width: 300px;
-    height: auto;
-}
-#img2 {
-    width: 250px;
-    height: auto;
-    margin-top: 12px;
-    margin-left: 7px;
-}
-
-p {
-    font-size: 18px;
-    font-family: sans-serif;
-}
 
 .inicial {
     display: flex;
@@ -42,7 +25,6 @@ p {
     display: flex;
     width: auto;
     height: 60px;
-    justify-content: center;
 }
 
 #barra {
@@ -54,69 +36,5 @@ p {
         background-color: #080c4c;
         padding-left: 10px;
         padding-right: 10px;
-}
-
-
-#tabela {
-    display: flex;
-    align-items: baseline;
-    border: rgb(92, 92, 92) solid 1px;
-    width:  1200px;
-    height: 350px;
-    flex-direction: column;
-}
-
-#botao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:  1200px;
-    height: 70px;
-    text-decoration: none;
-}
-
-.but {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: medium;
-    background-color: #8cb4fc;
-    color: white;
-    width: 600px;
-    height: 70px;
-    font-size: large;
-    border: none;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-
-.but:hover {
-    background-color:#417FF5;
-    text-decoration: none;
- }
-
-#texto {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    height: 350px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-#alinhar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 78vh;
-}
-
-#imagem_texto {
-    display: flex;
-    flex-direction: row;
-    height: 280px;
 }
 

@@ -1,6 +1,34 @@
 body {
     overflow: hidden;
-    margin: 0;
+}
+
+HEAD input {
+    display: flex;
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    height: 60px;
+    padding-left: 10px;
+}
+
+label {
+    font-size: larger;
+    font-family: sans-serif;
+    padding-right: 10px;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+}
+
+.lado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .inicial {
@@ -17,39 +45,125 @@ body {
     border: none;
     font-family: sans-serif;
 }
+
 .inicial:hover {
-   background-color:#2c5cac;
+    background-color: #2c5cac;
 }
 
 #logo {
     display: flex;
     width: auto;
     height: 60px;
-    border: 1px black solid;
-    justify-content: center;
 }
 
 #barra {
-        display: flex;
-        width: auto;
-        height: 70px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #080c4c;
-        padding-left: 10px;
-        padding-right: 10px;
-        
-    }
+    display: flex;
+    width: auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080c4c;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+<<<<<<< HEAD
 
-   #corpo {
+#login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 120px);
+
+}
+
+#esquerda {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
-    border: 1px black solid;
-    height: 70vh;
-   }
+    width: 55%;
+    justify-content: space-around;
+    background-color: #ddebfb;
+    height: auto;
+    margin-bottom: 10px;
+}
 
+#direita {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#bot1,
+#bot2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: medium;
+}
+
+#bot1 {
+    width: 160px;
+    height: 60px;
+    background-color: white;
+}
+
+#bot1:hover {
+    background-color: #ebebf3;
+}
+
+#bot2 {
+    width: 250px;
+    height: 60px;
+    background-color: #ebebf3;
+    margin-bottom: 10px;
+}
+
+#bot2:hover {
+    background-color: #bebebe;
+}
+
+#um {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+#dois {
+    font-size: 45px;
+    font-family: sans-serif;
+    text-align: center;
+
+    #corpo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border: 1px black solid;
+        height: 70vh;
+    }
+
+    #tronco {
+        display: flex;
+        flex-direction: row;
+        height: 70vh;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 50px;
+        border: #2c5cac solid 1px;
+        background-color: #d4e4ff;
+        border-radius: 50px;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+<<<<<<< HEAD
    #tronco {
     display: flex;
     flex-direction: row;
@@ -58,25 +172,132 @@ body {
     margin-right: 50px;
     margin-left: 50px;
     border: #2c5cac solid 1px;
-    background-color: #d4e4ff;
+    background-color: #ddebfb;
     border-radius: 50px;
     justify-content: space-around;
     width: 80%;
    }
+=======
+=======
 
-   #login, #cadastro, #acompanhante {
+#login {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 120px);
+
+}
+
+#esquerda {
+    display: flex;
     align-items: center;
-    border: #080c4c 1px solid;
-    height: 300px;
-    width: 300px;
-   }
-   #login {
-    display: flex;
+    flex-direction: column;
+    width: 55%;
     justify-content: space-around;
-   }
+    background-color: #ddebfb;
+    height: auto;
+    margin-bottom: 10px;
+}
 
+#direita {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#bot1,
+#bot2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: medium;
+}
+
+#bot1 {
+    width: 160px;
+    height: 60px;
+    background-color: white;
+}
+
+#bot1:hover {
+    background-color: #ebebf3;
+}
+
+#bot2 {
+    width: 250px;
+    height: 60px;
+    background-color: #ebebf3;
+    margin-bottom: 10px;
+}
+
+#bot2:hover {
+    background-color: #bebebe;
+}
+
+#um {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+#dois {
+    font-size: 45px;
+    font-family: sans-serif;
+    text-align: center;
+
+    #corpo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border: 1px black solid;
+        height: 70vh;
+    }
+
+    #tronco {
+        display: flex;
+        flex-direction: row;
+        height: 70vh;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 50px;
+        border: #2c5cac solid 1px;
+        background-color: #d4e4ff;
+        border-radius: 50px;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+>>>>>>> f7bfad5dbbc3ecf3574dd16b528b3c65787623f0
+    #login,
+    #cadastro,
+    #acompanhante {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: #080c4c 1px solid;
+        height: 300px;
+        width: 300px;
+    }
+<<<<<<< HEAD
+>>>>>>> f7bfad5dbbc3ecf3574dd16b528b3c65787623f0
+=======
+>>>>>>> f7bfad5dbbc3ecf3574dd16b528b3c65787623f0
+
+    #login {
+        display: flex;
+        justify-content: space-around;
+    }
+
+<<<<<<< HEAD
+<<<<<<< HEAD
    #form {
     display: flex;
     justify-content: space-evenly;
@@ -84,21 +305,103 @@ body {
     height: 150px;
     width: auto;
     border: #080c4c solid 1px;
+    margin-bottom: 40px;
+    width: 300px;
+    padding-left: 40px;
    }
+=======
+=======
+>>>>>>> f7bfad5dbbc3ecf3574dd16b528b3c65787623f0
+    #form {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 150px;
+        width: auto;
+        border: #080c4c solid 1px;
+    }
+<<<<<<< HEAD
+>>>>>>> f7bfad5dbbc3ecf3574dd16b528b3c65787623f0
+=======
+>>>>>>> f7bfad5dbbc3ecf3574dd16b528b3c65787623f0
 
-   #lado {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-   }
+    #lado {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
-   input {
-    display: flex;
+    }
+
+    input {
+        display: flex;
         border: none;
-        border-radius: 10px;
-        width: 180px;
-        height: 30px;
+        border-radius: 15px;
+        width: 250px;
+        height: 40px;
         font-size: 15px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+
+#bot1, #bot2, #bot3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: medium;
+}
+#bot1 {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+#bot1:hover {
+    background-color: #ebebf3;
+}
+
+#bot2 {
+    width: 160px;
+    height: 40px;
+    background-color: #ebebf3;
+    margin-bottom: 10px;
+ 
+}
+#bot2:hover {
+    background-color: #bebebe;
+}
+
+#bot3 {
+    width: 200px;
+    height: 40px;
+    background-color: #ebebf3;
+    margin-bottom: 10px;
+}
+#bot3:hover {
+    background-color: #bebebe;
+}
+
+
+#cadastro, #acompanhante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;    
+    border-radius: 40px;
+    justify-content: space-around;
+}
+
+#text2 {
+    display: flex;
+    align-items: center;
+=======
+    }
+>>>>>>> f7bfad5dbbc3ecf3574dd16b528b3c65787623f0
+=======
+    }
+>>>>>>> f7bfad5dbbc3ecf3574dd16b528b3c65787623f0
 }
