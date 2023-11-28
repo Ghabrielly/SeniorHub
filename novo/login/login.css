@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     margin: 0;
 }
 
@@ -47,16 +46,16 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 80vh
-
-}
+    height: 100vh;
+  }
+ 
 
     #corpo {
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        height: 70vh;
+        height: 100vh;
     }
 
     #tronco {

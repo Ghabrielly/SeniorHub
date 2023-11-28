@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     margin: 0;
 }
 
@@ -51,7 +50,7 @@ body {
 
 #centro {
     display: flex;
-    height: calc(85vh - 80px);
+    height: calc(100vh - 80px);
     width: 100%;
    
 }
