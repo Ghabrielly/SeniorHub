@@ -16,9 +16,12 @@ body {
     border: none;
     font-family: sans-serif;
 }
+
 .inicial:hover {
-   background-color:#2c5cac;
-}
+    color: #cfd3fd;
+    font-size: 20px;
+    text-decoration: underline;
+ }
 
 #logo {
     display: flex;
