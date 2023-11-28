@@ -98,15 +98,14 @@ body {
     flex-direction: column;
     height: 100%;
     width: 25%;
-    border: 1px black solid;
     background-color: #ccddfc;
+    border: black 1px solid;
 }
 
 
 #direita {
     height: 100%;
     width: 75%;
-    border: 1px black solid;
     display: flex;
     align-items: center;
     justify-content: center;
