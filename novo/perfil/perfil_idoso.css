@@ -68,7 +68,7 @@ body {
 
 #maior {
     border: 1px black solid;
-    height: 85vh;
+    height: 81vh;
     width: auto;
 }
 
@@ -118,8 +118,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     border: 1px black solid;
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 85%;
 
 }
 
@@ -183,12 +183,13 @@ body {
 #nome_completo {
     border: 1px black solid;
     height: 15%;
-    width: 80%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: large;
     font-family: sans-serif;
+    background-color: #c1c6f7;
 }
 
 #hob {
@@ -245,12 +246,15 @@ body {
 #but1 {
     width: 250px;
     height: 40px;
-    background-color: #ccdfff;
+    background-color: #2c5cac;
     border-radius: 10px;
     font-size: medium;
     font-family: sans-serif;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
 }
 
 #but1:hover {
-    background-color: #5178b9;
+    background-color: #080c4c;
 }
