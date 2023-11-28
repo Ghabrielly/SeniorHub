@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     margin: 0;
 }
 
@@ -17,8 +16,12 @@ body {
     border: none;
     font-family: sans-serif;
 }
+
+
 .inicial:hover {
-   background-color:#2c5cac;
+   color: #cfd3fd;
+   font-size: 20px;
+   text-decoration: underline;
 }
 
 #logo {
@@ -51,7 +54,7 @@ body {
 
 #centro {
     display: flex;
-    height: calc(85vh - 80px);
+    height: calc(100vh - 80px);
     width: 100%;
    
 }
