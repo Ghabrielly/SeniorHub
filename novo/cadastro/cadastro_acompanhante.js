@@ -9,10 +9,16 @@ const Inascimento= document.querySelector("#nascimento");
 const Igenero = document.querySelector("#genero");
 const Iendereco = document.querySelector("#endereco");
 const Ihobbie = document.querySelector("#Hobbie");
-const Iespecializacao = document.querySelector("#especializacao");
+const Icertificado = document.querySelector("#especializacao");
 const Isenha = document.querySelector("#senha");
 
+	
 function cadastrar() {
+    var sexo = 0;
+	if(Igenero.value == 'masculino'){
+		sexo = 1;
+	}
+
     fetch("http://localhost:8080/salvarAcompanhante", {
         headers: {
             'Accept': 'application/json',
@@ -24,28 +30,33 @@ function cadastrar() {
             usuario: Iusuario.value,
             email: Iemail.value,
             telefone: Itelefone.value,
-            nascimento: Inascimento.value,
-            genero: Igenero.value,
+            nasc: Inascimento.value,
+            genero: sexo,
             endereco: Iendereco.value,
-            hobbies:Ihobbies.value,
+            hobbies:Ihobbie.value,
             certificado: Icertificado.value,
             senha: Isenha.value,
-          
+            descricao:""
         })
     })
-    .then(function (res) { console.log(res) })
-    .catch(function (res) { console.log(res) })
+    .then(function (res) {
+         console.log(res) 
+         alert("Acompanhante Cadastrado!")
+        })
+    .catch(function (res) {
+         console.log(res) 
+        })
     }
 
     function limpar () {
         Inome.value = "";
-        Isuario.value = "";
+        Iusuario.value = "";
         Iemail.value = "";
         Itelefone.value = "";
         Inascimento.value = "";
         Igenero.value = "";
         Iendereco.value = "";
-        Ihobbies.value = "";
+        Ihobbie.value = "";
         Icertificado.value = "";
         Isenha.value = "";
         };
