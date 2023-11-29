@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function exibirDadosAcompanhante(acompanhante) {
-        document.getElementById('usuariodois').innerText = acompanhante.usuariodois;
-		document.getElementById('usuario').innerText = acompanhante.usuario;
+        document.getElementById('usuariodois').innerText = acompanhante.usuario;
+		document.getElementById('usuario').innerText = acompanhante.nome;
 		document.getElementById('nome').innerText = acompanhante.nome;
         document.getElementById('email').innerText = acompanhante.email;
 		document.getElementById('genero').innerText = acompanhante.genero;
