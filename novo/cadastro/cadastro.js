@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 });
-// constantes que referenciam as tags html do formulário de cadastro
+// verificar nome dos inputs do formulário
 const Inome = document.querySelector("#nome");
 const Iusuario = document.querySelector("#usuario");
 const Iemail = document.querySelector("#email");
@@ -13,10 +13,13 @@ const Isupor = document.querySelector("#supo");
 const Isuporte = document.querySelector("#Suporte");
 const Isenha = document.querySelector("#senha");
 
-// criou uma função usando o fetch para fazer uma requisição 
-// post para enviar o json com as informações de cadastro para a api
 function cadastrar() {
-    fetch("http://localhost:8080/salvarIdoso", {
+	var sexo = 0;
+	if(Igenero.value == 'masculino'){
+		sexo = 1;
+	}
+
+    fetch("http://localhost:8080/salvarIdoso", { //rota de cadastro
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json' 
@@ -28,35 +31,32 @@ function cadastrar() {
             email: Iemail.value,
             telefone: Itelefone.value,
             nascimento: Inascimento.value,
-            genero: Igenero.value,
+            genero: sexo,
             endereco: Iendereco.value,
             hobbie:Ihobbie.value,
-            // supsim: Isupsim.value,
-            // supnao: Isupnao.value,
-            // supor: Isupor.value,
-            // suport: Isuport.value,
-            // suporte: Isuporte.value,
-            // contato: Icontato.value,
             senha: Isenha.value,
-          
         })
     })
-    .then(function (res) { console.log(res) })
-    .catch(function (res) { console.log(res) })
+    .then(function (res) { 
+		console.log(res)
+		alert("Idoso cadastrado com sucesso!");
+	})
+    .catch(function (res) { 
+		console.log(res) 
+	})
 }
 
-    function limpar () {
-        Inome.value = "";
-        Isuario.value = "";
-        Iemail.value = "";
-        Itelefone.value = "";
-        Inascimento.value = "";
-        Igenero.value = "";
-        Iendereco.value = "";
-        Ihobbie.value = "";
-        Isupor.value = "";
-        Isuport.value = "";
-        Isuporte.value = "";
-        Isenha.value = "";
-        };
-    
+function limpar () {
+	Inome.value = "";
+	Isuario.value = "";
+	Iemail.value = "";
+	Itelefone.value = "";
+	Inascimento.value = "";
+	Igenero.value = "";
+	Iendereco.value = "";
+	Ihobbie.value = "";
+	Isupor.value = "";
+	Isuport.value = "";
+	Isuporte.value = "";
+	Isenha.value = "";
+};
