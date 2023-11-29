@@ -151,7 +151,7 @@ label {
     display: flex;
     align-items: center;
     border: #080c4c 1px solid;
-    height: 90%;
+    height: 80%;
     width: 80%;
     flex-direction: column;
 }
