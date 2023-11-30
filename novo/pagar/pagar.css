@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+}
+
+#img1 {
+    width: 320px;
+    height: 350px;
+    margin-top: 20px;
+}
+
+
+.inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: medium;
+    background-color: #080c4c;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: large;
+    border: none;
+    font-family: sans-serif;
+}
+
+.inicial:hover {
+    color: #cfd3fd;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+#logo {
+    display: flex;
+    width: auto;
+    height: 50px;
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#barra {
+    display: flex;
+    width: auto;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080c4c;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#tudo {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 110px);
+    width: auto;
+}
+
+#cima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    height: 15%;
+    width: 100%;
+}
+
+#alinha_baixo {
+    display: flex;
+    height: calc(100vh - 110px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#baixo {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border: #080c4c 1px solid;
+    border-radius: 10px;
+}
+
+#esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+#tabelinha {
+    border: #080c4c 1px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+#txt, #txt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    font-size: larger;
+    background-color: #cfd3fd;
+    width: 100%;
+    border-bottom: #080c4c 1px solid;
+}
+
+#juntos {
+    display: flex;
+    align-items: first baseline baseline;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 85%;
+    width: 90%;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#juntos label{
+    font-weight: bold; 
+  
+}
+
+.parte {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#direita {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    border: #080c4c 1px solid;
+}
+
+#tabelona {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 90%;
+    border-radius: 10px;
+    border: #080c4c 1px solid;
+    align-items: center;
+}
+
+#tristeza {
+    height: 70%;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: first baseline;
+    border: 1px #080c4c solid;
+}
+
+#table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+#pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+#bot {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#but1 {
+    width: 250px;
+    height: 40px;
+    background-color: #2c5cac;
+    border-radius: 10px;
+    font-size: medium;
+    font-family: sans-serif;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#but1:hover {
+    background-color: #080c4c;
+}
+

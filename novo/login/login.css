@@ -97,6 +97,7 @@ body {
     margin-bottom: 40px;
     width: 300px;
     padding-left: 40px;
+    justify-content: space-around;
 
 }
 
@@ -183,9 +184,7 @@ body {
 #butt {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
-}
+    justify-content: center;}
 
 #lado1 {
     display: flex;
