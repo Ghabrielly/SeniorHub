@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function exibirDadosAcompanhante(acompanhante) {
         document.getElementById('usuarioum').innerText = acompanhante.nome;
-		document.getElementById('usuariodois').innerText = acompanhante.nome;
+		document.getElementById('cpf').innerText = acompanhante.cpf;
 		document.getElementById('nome').innerText = acompanhante.nome;
         document.getElementById('email').innerText = acompanhante.email;
 		document.getElementById('genero').innerText = acompanhante.genero;
