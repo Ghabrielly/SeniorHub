@@ -35,29 +35,35 @@
                         <input type="senha" name="senha" id="senha" placeholder="Digite sua senha">
                     </div>
                     <br/>
-                    <select id="tipoLogin" name="tipoLogin">
-                        <option value="idoso">Idoso</option>
-                        <option value="acompanhante">Acompanhante</option>
-                    </select>
-                </div>
-                <div id="butt"><button id="bot1" onclick="fazerLogin()">Entrar</button></div>
-            </div>
-            <div class="cadastro">
-                <div>
-                    <div  class="txt">
-                        <p><strong>Venha fazer parte do SeniorHub</strong></p>
-                        <p> Ainda não é cadastrado? <br> Não se preocupe, clique em no botão abaixo e faça parte da comunidade incrível do SeniorHub.
-                        </p>
+                    <div id="escolhendo">
+                        <label for="tipoLogin">Escolha:</label>
+                        <select id="tipoLogin" name="tipoLogin">
+                            <option value="idoso">Idoso</option>
+                            <option value="acompanhante">Acompanhante</option>
+                        </select>
                     </div>
                 </div>
-                <a href="../cadastro/cadastro"><button id="bot2">Crie uma conta</button></a>
+                <div id="butt">
+                    <button id="bot1" onclick="fazerLogin()">Entrar</button></div>
             </div>
-            <div class="cadastro">
-                <div class="txt">
-                    <p><strong>Trabalhe conosco</strong></p>
-                    <p>Quer se tornar um acompanhante e viver experiências incríveis ajudando nossos idosos? Clique aqui:</p>
+            <div id="criar">
+                <div class="cadastro">
+                    <div>
+                        <div  class="txt">
+                            <p><strong>Venha fazer parte do SeniorHub</strong></p>
+                            <p> Ainda não é cadastrado? <br> Não se preocupe, clique em no botão abaixo e faça parte da comunidade incrível do SeniorHub.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="../cadastro/cadastro"><button id="bot2">Crie uma conta</button></a>
                 </div>
-                <a href="../cadastro/cadastro_acompanhante"><button id="bot3">Torne-se acompanhante</button></a>
+                <div class="cadastro">
+                    <div class="txt">
+                        <p><strong>Trabalhe conosco</strong></p>
+                        <p>Quer se tornar um acompanhante e viver experiências incríveis ajudando nossos idosos? Clique aqui:</p>
+                    </div>
+                    <a href="../cadastro/cadastro_acompanhante"><button id="bot3">Torne-se acompanhante</button></a>
+                </div>
             </div>
         </div>
             <div id="final"></div>
