@@ -10,6 +10,7 @@ const Igenero = document.querySelector("#genero");
 const Iendereco = document.querySelector("#endereco");
 const Ihobbie = document.querySelector("#Hobbie");
 const Icertificado = document.querySelector("#especializacao");
+const Icpf = document.querySelector("#cpf");
 const Isenha = document.querySelector("#senha");
 
 	
