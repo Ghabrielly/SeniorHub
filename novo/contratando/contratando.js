@@ -15,9 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     inputQntdHora.addEventListener('input', calcularValorFinal);
 });
 
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
 });
 
@@ -48,7 +45,8 @@ fetch("http://localhost:8080/salvarAgendamento", {
     })
 })
 .then(function (res) { console.log(res) })
-.catch(function (res) { console.log(res) })
+.catch(function (res) { console.log(res) 
+    alert("Contratação realizada com sucesso!") })
 }
 
 function limpar () {
