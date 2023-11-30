@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const valorFixoPorHora = 50; 
+    const inputQntdHora = document.getElementById('qntd_hora'); 
+    const spanValorFinal = document.getElementById('valor_final'); 
+
+   
+    function calcularValorFinal() {
+        const quantidadeHoras = parseFloat(inputQntdHora.value) || 0;
+
+        const valorFinal = quantidadeHoras * valorFixoPorHora; 
+          
+        spanValorFinal.textContent = `R$ ${valorFinal.toFixed(2)}`;
+    }
+
+    inputQntdHora.addEventListener('input', calcularValorFinal);
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
 });
 
 const Inome = document.querySelector("#nome");
@@ -46,3 +66,8 @@ event.preventDefault();
 contratar();
 limpar();
 });
+
+
+
+
+

@@ -108,27 +108,6 @@
             </div>
         </div>
     </div>
-    <script src="contratando.js">
-        document.addEventListener('DOMContentLoaded', function() {
-    const valorFixoPorHora = 50; // Valor fixo por hora
-    const inputQntdHora = document.getElementById('qntd_hora'); // Campo de entrada de quantidade de horas
-    const spanValorFinal = document.getElementById('valor_final'); // Span para exibir o valor final
-
-    // Função para calcular e exibir o valor final
-    function calcularValorFinal() {
-        const quantidadeHoras = parseFloat(inputQntdHora.value) || 0; // Obtém a quantidade de horas, considerando 0 se não for um número válido
-
-        const valorFinal = quantidadeHoras * valorFixoPorHora; // Calcula o valor final
-
-        // Exibe o valor final no span
-        spanValorFinal.textContent = `R$ ${valorFinal.toFixed(2)}`; // Formata o valor para exibir como moeda brasileira
-    }
-
-    // Adiciona um evento de input para calcular o valor final toda vez que o campo de quantidade de horas for alterado
-    inputQntdHora.addEventListener('input', calcularValorFinal);
-});
-
-
-    </script>
+    <script src="contratando.js"></script>
 
 </body>
