@@ -11,6 +11,7 @@ const Iendereco = document.querySelector("#endereco");
 const Ihobbie = document.querySelector("#Hobbie");
 const Isupor = document.querySelector("#supo");
 const Isuporte = document.querySelector("#Suporte");
+const Icpf = document.querySelector("#cpf");
 const Isenha = document.querySelector("#senha");
 
 function cadastrar() {

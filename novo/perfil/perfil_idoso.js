@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function exibirDadosIdoso(acompanhante) {
         document.getElementById('usuariodois').innerText = acompanhante.usuario;
-		document.getElementById('usuario').innerText = acompanhante.nome;
+		document.getElementById('cpf').innerText = acompanhante.cpf;
 		document.getElementById('nome').innerText = acompanhante.nome;
         document.getElementById('email').innerText = acompanhante.email;
 		document.getElementById('genero').innerText = acompanhante.genero;
