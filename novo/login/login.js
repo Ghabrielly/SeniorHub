@@ -20,7 +20,7 @@ function fazerLogin() {
         if (response.ok) {
             sessionStorage.setItem('usuario', usuario);
             alert('Login bem-sucedido!');
-            window.location.href = "../inicio/inicio2";
+            window.location.href = "../inicio/inicio.html";
         } else {
             alert('Login ou senha incorretos. Tente novamente.');
         }
@@ -34,5 +34,5 @@ function fazerLogin() {
 const usuario = sessionStorage.getItem('usuario');
 if (usuario) {
     alert('Usuário autenticado: ' + usuario);
-    window.location.href = "../inicio/inicio2";
+    window.location.href = "../inicio/inicio.html";
 }
