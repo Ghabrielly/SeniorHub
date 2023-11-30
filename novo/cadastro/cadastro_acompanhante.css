@@ -214,13 +214,6 @@ label {
     flex-direction: column;
 }
 
-#especializacao {
-    display: flex;
-    align-items: center;
-    width: 305px;
-    height: 40px;
-}
-
 .input-file {
     display: flex;
     width: 305px;
