@@ -65,36 +65,42 @@
                         <div id="tristeza">
                             <div id="grande">
                                 <label for="nome">Nome completo:</label>
-                                <span id="nome"><!-- no caso, aqui seria o nome do idoso--></span>
+                                <span id="nome">a<!-- no caso, aqui seria o nome do idoso--></span>
                             </div >
                             <div id="table">
-                                <div id="pay">
-                                    <label for="pagamento">Forma de pagamento:</label>
-                                    <select id="pagamento" name="pagamento">
-                                        <option value="cartao">Cartão</option>
-                                        <option value="pix">Pix</option>
-                                        <!--acho q n tem isso no banco, ent se der erro por conta disso usa isso aqui:
-                                                    <label for="pagamento">Forma de pagamento</label>
-                                                    <input type="text" id="pagamento" placeholder="Cartão, Pix, alguma outra forma...">  -->
-                                    </select>
-                                </div>
-                                <div id="value">
-                                    <label for="valor_final">Valor final:</label>
-                                    <span id="valor_final"></span>
-                                </div>
+                                
+                                    <div id="pay">
+                                        <label for="pagamento">Forma de pagamento:</label>
+                                        <select id="pagamento" name="pagamento">
+                                            <option value="cartao">Cartão</option>
+                                            <option value="pix">Pix</option>
+                                            <!--acho q n tem isso no banco, ent se der erro por conta disso usa isso aqui:
+                                                        <label for="pagamento">Forma de pagamento</label>
+                                                        <input type="text" id="pagamento" placeholder="Cartão, Pix, alguma outra forma...">  -->
+                                        </select>
+                                    </div>
+                                    <div id="value">
+                                        <label for="valor_final">Valor final:</label>
+                                        <span id="valor_final"></span>
+                                    </div>
+                                
                             </div>
                             <div id="pass">
                                 <div class="pass1">
-                                    <label for="senha">Digite sua senha;</label>
-                                    <input type="password" class="senha" placeholder="*******">
+                                    <div>
+                                        <label for="senha">Digite sua senha;</label>
+                                        <input type="password" class="senha" placeholder="*******">
+                                    </div>
                                 </div>
                                 <div class="pass1">
-                                    <label for="senha">Digite sua senha novamente:</label>
-                                    <input type="password" class="senha" placeholder="*******">
+                                    <div>
+                                        <label for="senha">Digite sua senha novamente:</label>
+                                        <input type="password" class="senha" placeholder="*******">
+                                    </div>
                                 </div>
                             </div>
+                            <div id="bot"><button id="but1">Pagar</button></div>
                         </div>
-                        <div id="bot"><button id="but1">Pagar</button></div>
                     </div>
                 </div>
             </div>

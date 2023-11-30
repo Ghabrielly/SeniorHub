@@ -26,16 +26,16 @@
                 <div id="txt"><h1>Login</h1></div>
                 <div id="form">
                     <div id="lado1">
-                        <label for="email">E-mail:</label>
+                        <label for="email"><strong>E-mail:</strong></label>
                         <input type="email" name="email" id="email" placeholder="Seuemail@gmail.com">
                     </div>
                     <div id="lado2">
-                        <label for="senha">Senha:</label>
+                        <label for="senha"><strong>Senha:</strong></label>
                         <input type="senha" name="senha" id="senha" placeholder="Digite sua senha">
                     </div>
-                    <div>
-                        <label for="escolha">Escolha:</label>
-                        <select id="escolha" name="genero">
+                    <div id="escolhendo">
+                        <label for="escolha"><strong>Escolha:</strong></label>
+                        <select id="escolha" name="escolha">
                             <option value="idoso">Idoso</option>
                             <option value="acompanhante">Acompanhante</option>
                         </select>
@@ -43,22 +43,24 @@
                 </div>
                 <div id="butt"><button id="bot1">Entrar</button></div>
             </div>
-            <div class="cadastro">
-                <div>
-                    <div  class="txt">
-                        <p><strong>Venha fazer parte do SeniorHub</strong></p>
-                        <p> Ainda não é cadastrado? <br> Não se preocupe, clique em no botão abaixo e faça parte da comunidade incrível do SeniorHub.
-                        </p>
+            <div id="criar">
+                <div class="cadastro">
+                    <div>
+                        <div  class="txt">
+                            <p><strong>Venha fazer parte do SeniorHub</strong></p>
+                            <p> Ainda não é cadastrado? <br> Não se preocupe, clique em no botão abaixo e faça parte da comunidade incrível do SeniorHub.
+                            </p>
+                        </div>
                     </div>
+                    <a href="../cadastro/cadastro.html"><button id="bot2">Crie uma conta</button></a>
                 </div>
-                <a href="../cadastro/cadastro.html"><button id="bot2">Crie uma conta</button></a>
-            </div>
-            <div class="cadastro">
-                <div class="txt">
-                    <p><strong>Trabalhe conosco</strong></p>
-                    <p>Quer se tornar um acompanhante e viver experiências incríveis ajudando nossos idosos? Clique aqui:</p>
+                <div class="cadastro">
+                    <div class="txt">
+                        <p><strong>Trabalhe conosco</strong></p>
+                        <p>Quer se tornar um acompanhante e viver experiências incríveis ajudando nossos idosos? Clique aqui:</p>
+                    </div>
+                    <a href="../cadastro/cadastro_acompanhante.html"><button id="bot3">Torne-se acompanhante</button></a>
                 </div>
-                <a href="../cadastro/cadastro_acompanhante.html"><button id="bot3">Torne-se acompanhante</button></a>
             </div>
         </div>
             <div id="final"></div>
