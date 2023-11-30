@@ -1,18 +1,34 @@
 document.addEventListener('DOMContentLoaded', function () {
-    function carregarDadosAcompanhante() {
-        const url = 'http://localhost:8080/mostrarIdosos/1';
+    function carregarDadosIdoso() {
+        // var urlParams = new URLSearchParams(window.location.search);
+        // var idParam = urlParams.get('id');
+        // if (idParam !== null) {
+        //     console.log('Valor do parâmetro "id":', idParam);
+        // } else {
+        //     console.log('Parâmetro "id" não encontrado na URL.');
+        //     return
+        // }        
 
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                exibirDadosAcompanhante(data);
-            })
-            .catch(error => {
-                console.error('Erro na requisição:', error);
-            });
+        // const url = 'http://localhost:8080/mostrarIdosos/'+idParam;
+
+        // fetch(url)
+        // .then(response => response.json())
+        // .then(data => {
+        //     exibirDadosAcompanhante(data);
+        // })
+        // .catch(error => {
+        //     console.error('Erro na requisição:', error);
+        // });
+
+        const data = sessionStorage.getItem('usuario');
+        console.log(data)
+        if (data) {
+            exibirDadosIdoso(data);
+        }
+        
     }
 
-    function exibirDadosAcompanhante(acompanhante) {
+    function exibirDadosIdoso(acompanhante) {
         document.getElementById('usuariodois').innerText = acompanhante.usuario;
 		document.getElementById('usuario').innerText = acompanhante.nome;
 		document.getElementById('nome').innerText = acompanhante.nome;
@@ -25,5 +41,5 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('hobbie').innerText = acompanhante.hobbie;
     }
 
-    carregarDadosAcompanhante();
+    carregarDadosIdoso();
 });

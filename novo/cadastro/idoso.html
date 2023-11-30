@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="cadastro_acompanhante.css">
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="shortcut icon" href="../Logos png/seniorHubLogoAzulClaroEscuro2.svg" type="image/x-icon">
 </head>
 
 <body>
-    <a href="../inicio/index.html">
+    <a href="../inicio/index">
         <div id="logo"><img src="../../Logos png/seniorHubLogoAzulClaroEscuro.png" alt=""></div>
     </a>
     <div id="barra">
-        <a href="../inicio/index.html"><button class="inicial">Início</button></a>
+        <a href="../inicio"><button class="inicial">Início</button></a>
         <a href=""><button class="inicial">Cadastro</button></a>
-        <a href="../login/login.html"><button class="inicial">Voltar</button></a>
+        <a href="../login"><button class="inicial">Voltar</button></a>
     </div>
 
     <div id="titu">
-        <h1>Cadastro Acompanhante</h1>
+        <h1>Cadastro Idoso</h1>
     </div>
     <div id="centro">
         <div id="direita">
@@ -31,7 +31,7 @@
                 <div id="form">
                     <div id="primeiro">
                         <label for="nome">Nome Completo:</label>
-                        <input  type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
                     </div>
                     <div class="infos">
                         <div class="junto">
@@ -50,7 +50,7 @@
                         </div>
                         <div class="junto">
                             <label for="endereco">Endereço:</label>
-                            <input type="text" name="endereco" id="endereco" placeholder="Digite sua data de endereço">
+                            <input type="text" name="endereco" id="endereco" placeholder="Digite sua endereço completo">
                         </div>
                     </div>
                     <div class="infos">
@@ -88,21 +88,30 @@
                 <div class="txt2">
                     <h2>Outras Informações</h2>
                 </div>
-                    <div>
-                        <label for="especializacao" >Especialização:</label>
-                        <input type="text" name="especializacao" id="especializacao" class="input-file">
+                <div id="um">
+                    <div id="sup">
+                        <label for="Suporte">Precisa de suporte?</label>
+                        <select id="Supo" name="Suporte">
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Nâo</option>
+                        </select>
                     </div>
+                    <div class="a">
+                        <label for="Suporte">Suporte:</label>
+                        <input type="text" name="Suporte" id="Suporte" placeholder="Se sim, digite aqui">
+                    </div>
+                </div>
                 <div id="amor">
                    
                         <div class="a">
                             <label for="Hobbie">Hobbies:</label>
-                            <input type="txt" name="Hobbie" id="Hobbie" placeholder="Digite seu hobbie favorito">
+                            <input type="txt" name="Hobbie" id="Hobbie" placeholder="Digite seu Hobbie preferido">
                         </div>
                     
-                    <div><button id="bot1" onclick="cadastrar()">Enviar</button></div>
+                    <div><button id="bot1" onclick="cadastrar()">Enviar"</button></div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="cadastro_acompanhante.js"></script>
-    </body>
+    <script src="cadastro.js"></script>
+</body>
