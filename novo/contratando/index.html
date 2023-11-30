@@ -101,14 +101,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="bot"><button id="but1">Pagar</button></div>
+                            <div id="bot"><button id="but1" onclick="contratar()">Pagar</button></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
+    <script src="contratando.js">
         document.addEventListener('DOMContentLoaded', function() {
     const valorFixoPorHora = 50; // Valor fixo por hora
     const inputQntdHora = document.getElementById('qntd_hora'); // Campo de entrada de quantidade de horas
@@ -127,8 +127,6 @@
     // Adiciona um evento de input para calcular o valor final toda vez que o campo de quantidade de horas for alterado
     inputQntdHora.addEventListener('input', calcularValorFinal);
 });
-
-
 
 
     </script>
