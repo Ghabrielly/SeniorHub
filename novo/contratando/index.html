@@ -30,25 +30,31 @@
                 <div id="esquerda">
                     <div id="tabelinha">
                         <div id="txt">
-                            <h2>Resumo da contratação</h2>
+                            <h2>Contratando</h2>
                         </div>
                         <div id="juntos">
                         <div class="parte">
                             <label for="nome">Nome do acompanhante:</label>
-                            <span id="nome">aa</span>
+                            <span id="nome"><!--Aqui seria o do acompanhante como ta escrito em cima '-'-->aa</span>
                         </div>
                         <div class ="parte">
-                            <label for="idade">Idade:</label>
-                            <span id="idade">aaa</span>
+                            <label for="local">Local de encontro:</label>
+                            <input type="text" id="local" placeholder="Rua Antonio Morais 123">
                         </div>
                         
                             <div class="parte">
-                                <label for="hobbie">hobbies:</label>
-                                <span id="hobbie">aa</span>
+                                <label for="data">Data:</label>
+                                <input type="date" id="data">
                             </div>
-                            <div class="parte">
-                                <label for="sobre">sobre:</label>
-                                <span id="sobre">aa</span>
+                            <div id="juntinhos">
+                                <div class="parte2">
+                                    <label for="hora">Horário:</label>
+                                    <input type="text" name="hora" id="hora" placeholder="7:00 - 22:00">
+                                </div>
+                                <div class="parte2">
+                                    <label for="qntd_hora">Valor hora:</label>
+                                   <input type="number" name="qntd_hora" id="qntd_hora" placeholder="1:00 - 8:00">
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -56,10 +62,13 @@
                 <div id="direita">
                     <div id="tabelona">
                         <div id="txt2">
-                            <h2>Contratação</h2>
+                            <h2>Pagamento</h2>
                         </div>
                         <div id="tristeza">
-
+                            <div id="grande">
+                                <label for="nome">Nome completo:</label>
+                                <span id="nome">a<!-- no caso, aqui seria o nome do idoso--></span>
+                            </div >
                             <div id="table">
                                 
                                     <div id="pay">
@@ -81,14 +90,14 @@
                             <div id="pass">
                                 <div class="pass1">
                                     <div>
-                                        <label for="senha">Horário;</label>
-                                        <input type="text" class="senha" placeholder="Ecmeplo: 14:30">
+                                        <label for="senha">Digite sua senha;</label>
+                                        <input type="password" class="senha" placeholder="*******">
                                     </div>
                                 </div>
                                 <div class="pass1">
                                     <div>
-                                        <label for="senha">Quantidade de horas:</label>i
-                                        <input type="tel" class="senha" placeholder="Ecemplo: 2:30">
+                                        <label for="senha">Digite sua senha novamente:</label>
+                                        <input type="password" class="senha" placeholder="*******">
                                     </div>
                                 </div>
                             </div>
@@ -99,6 +108,29 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const valorFixoPorHora = 50; // Valor fixo por hora
+    const inputQntdHora = document.getElementById('qntd_hora'); // Campo de entrada de quantidade de horas
+    const spanValorFinal = document.getElementById('valor_final'); // Span para exibir o valor final
 
+    // Função para calcular e exibir o valor final
+    function calcularValorFinal() {
+        const quantidadeHoras = parseFloat(inputQntdHora.value) || 0; // Obtém a quantidade de horas, considerando 0 se não for um número válido
+
+        const valorFinal = quantidadeHoras * valorFixoPorHora; // Calcula o valor final
+
+        // Exibe o valor final no span
+        spanValorFinal.textContent = `R$ ${valorFinal.toFixed(2)}`; // Formata o valor para exibir como moeda brasileira
+    }
+
+    // Adiciona um evento de input para calcular o valor final toda vez que o campo de quantidade de horas for alterado
+    inputQntdHora.addEventListener('input', calcularValorFinal);
+});
+
+
+
+
+    </script>
 
 </body>
