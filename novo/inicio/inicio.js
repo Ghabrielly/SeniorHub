@@ -13,4 +13,9 @@ if (!usuario) {
             menu.remove()
         }         
     }
+}if(usuario.idAcompanhante){
+    var menu = document.getElementById("acompanhantes")
+    if(menu){
+        menu.remove()
+    }         
 }
