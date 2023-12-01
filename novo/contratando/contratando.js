@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputQntdHora = document.getElementById('qntd_hora'); 
     const spanValorFinal = document.getElementById('valor_final'); 
 
-   
     function calcularValorFinal() {
         const quantidadeHoras = parseFloat(inputQntdHora.value) || 0;
 
