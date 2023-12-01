@@ -33,7 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 <label for="sobre">Sobre:</label>
                     <span id="sobre">${provider.descricao}</span>
                     <div>
-            </div>
+            </div>            
+        </div>
+        <div id="eita">
+            <div id="bot"><a id="but1" href="../contratando/?id=${provider.idAcompanhante}">Contratar</a></div>
         </div>`;
             providerListElement.appendChild(listItem);
         });

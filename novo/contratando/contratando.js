@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     inputQntdHora.addEventListener('input', calcularValorFinal);
+
+    carregarDadosIdoso();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -58,12 +60,41 @@ Ilocal.value = "";
 IdataContratacao.value = "";
 };
 
-formulario.addEventListener('submit', function (event) {
+function carregarDadosIdoso() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var idParam = urlParams.get('id');
+    if (idParam !== null) {
+        console.log('Valor do parâmetro "id":', idParam);
+    } else {
+        console.log('Parâmetro "id" não encontrado na URL.');
+        return
+    }    
+    var acompanhante;
+    const url = 'http://localhost:8080/mostrarAcompanhantes/'+idParam;
+
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        exibirDadosAcompanhante(data);
+    })
+    .catch(error => {
+        console.error('Erro na requisição:', error);
+    });
+}
+
+function exibirDadosAcompanhante(acompanhante){
+    document.getElementById('nome').innerText = acompanhante.nome;
+}
+
+document.addEventListener('submit', function (event) {
 event.preventDefault();
 
 contratar();
 limpar();
 });
+
+
 
 
 

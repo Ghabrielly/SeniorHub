@@ -18,12 +18,15 @@ function fazerLogin() {
     })
     .then(response => {
         if (response.ok) {
-            sessionStorage.setItem('usuario', usuario);
-            alert('Login bem-sucedido!');
-            window.location.href = "../inicio/inicio.html";
+            return response.json();
         } else {
-            alert('Login ou senha incorretos. Tente novamente.');
+            throw new Error('Login ou senha incorretos. Tente novamente.');
         }
+    })
+    .then(data => {
+        sessionStorage.setItem('usuario', JSON.stringify(data));
+        alert('Login bem-sucedido!');
+        window.location.href = "../inicio/inicio.html";
     })
     .catch(error => {
         console.error('Erro ao fazer login:', error);
@@ -33,6 +36,5 @@ function fazerLogin() {
 
 const usuario = sessionStorage.getItem('usuario');
 if (usuario) {
-    alert('Usuário autenticado: ' + usuario);
     window.location.href = "../inicio/inicio.html";
 }
