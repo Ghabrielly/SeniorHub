@@ -12,6 +12,7 @@ const Ihobbie = document.querySelector("#Hobbie");
 const Icertificado = document.querySelector("#especializacao");
 const Icpf = document.querySelector("#cpf");
 const Isenha = document.querySelector("#senha");
+const Isobre = document.querySelector ("#sobre");
 
 	
 function cadastrar() {
@@ -37,7 +38,8 @@ function cadastrar() {
             hobbies:Ihobbie.value,
             certificado: Icertificado.value,
             senha: Isenha.value,
-            descricao:""
+            cpf: Icpf.value,
+            descricao: Isobre.value,
         })
     })
     .then(function (res) {

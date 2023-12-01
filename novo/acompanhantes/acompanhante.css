@@ -8,13 +8,14 @@ body {
     margin-top: 20px;
 }
 
+a {text-decoration: none;}
+
 
 .inicial {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: medium;
     background-color: #080c4c;
     color: white;
     width: 250px;
@@ -23,28 +24,37 @@ body {
     border: none;
     font-family: sans-serif;
 }
+
 .inicial:hover {
-   background-color:#2c5cac;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 #logo {
     display: flex;
     width: auto;
     height: 50px;
-    justify-content: center;
+    padding-left: 10px;
     padding-bottom: 5px;
     padding-top: 5px;
+    justify-content: center;
 }
+
+#logo1 {
+    display: flex;
+    width: auto;
+    height: 50px;
+}
+
 
 #barra {
     display: flex;
     width: auto;
     height: 60px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #080c4c;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 

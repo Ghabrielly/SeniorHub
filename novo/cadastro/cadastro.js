@@ -36,6 +36,7 @@ function cadastrar() {
             endereco: Iendereco.value,
             hobbie:Ihobbie.value,
             senha: Isenha.value,
+			cpf: Icpf.value,
         })
     })
     .then(function (res) { 

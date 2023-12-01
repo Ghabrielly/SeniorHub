@@ -2,12 +2,14 @@ body {
     margin: 0;
 }
 
+a {text-decoration: none;}
+
+
 .inicial {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: medium;
     background-color: #080c4c;
     color: white;
     width: 250px;
@@ -18,30 +20,37 @@ body {
 }
 
 .inicial:hover {
-    color: #cfd3fd;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 25px;
     text-decoration: underline;
- }
+}
 
 #logo {
     display: flex;
     width: auto;
     height: 50px;
-    justify-content: center;
+    padding-left: 10px;
     padding-bottom: 5px;
     padding-top: 5px;
+    justify-content: center;
 }
+
+#logo1 {
+    display: flex;
+    width: auto;
+    height: 50px;
+}
+
 
 #barra {
     display: flex;
     width: auto;
     height: 60px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #080c4c;
-    padding-left: 10px;
-    padding-right: 10px;
 }
+
 
 #titu {
     justify-content: center;
@@ -70,12 +79,13 @@ body {
 #txt {
     display: flex;
     align-items: center;
-    border: #080c4c 1px solid;
+    border: #000000 1px solid;
     width: 85%;
     height: 80%;
     flex-direction: column;
     font-family: sans-serif;
     font-size: 15px;
+    border-radius: 10px;
 }
 
 #form {
@@ -152,10 +162,11 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: #080c4c 1px solid;
+    border: #000000 1px solid;
     height: 80%;
     width: 80%;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .txt2 {
@@ -168,6 +179,8 @@ label {
     justify-content: center;
     font-family: sans-serif;
     font-size: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 

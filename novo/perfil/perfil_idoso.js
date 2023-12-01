@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function exibirDadosIdoso(idoso) {
-        document.getElementById('cpf').innerText = idoso.cpf;
+        document.getElementById('usuario2').innerText = idoso.usuario;
         document.getElementById('usuario').innerText = idoso.usuario;
         document.getElementById('nome').innerText = idoso.nome;
         document.getElementById('email').innerText = idoso.email;
         document.getElementById('genero').innerText = idoso.genero;
         document.getElementById('endereco').innerText = idoso.endereco;
-        document.getElementById('suporte').innerText = idoso.suporte;
+        document.getElementById('cpf').innerText = idoso.cpf;
         document.getElementById('telefone').innerText = idoso.telefone;
         document.getElementById('nascimento').innerText = idoso.nascimento;
         document.getElementById('hobbie').innerText = idoso.hobbie;
