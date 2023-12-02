@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function calcularValorFinal() {
         const quantidadeHoras = parseFloat(inputQntdHora.value) || 0;
-
         const valorFinal = quantidadeHoras * valorFixoPorHora; 
-          
         spanValorFinal.textContent = `R$ ${valorFinal.toFixed(2)}`;
     }
 
@@ -16,65 +14,50 @@ document.addEventListener('DOMContentLoaded', function() {
     carregarDadosIdoso();
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-});
-
-const Inome = document.querySelector("#nome");
-const Iusuario = document.querySelector("#local");
-const Iemail = document.querySelector("#data");
-const Itelefone = document.querySelector("#hora");
-const Inascimento= document.querySelector("#qntd_hora");
-const Igenero = document.querySelector("#pagamento");
-const Iendereco = document.querySelector("#valor_final");
-const Isenha = document.querySelector("#senha");
+const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+const idAcompanhante = new URLSearchParams(window.location.search).get('id');
+const IquantidadeHora = document.querySelector("#qntd_hora");
+const valorHora = document.querySelector("#qntd_hora");
+const Ilocal = document.querySelector("#local");
+const IdataContratacao = document.querySelector("#data");
 
 function contratar() {
-fetch("http://localhost:8080/salvarAgendamento", {
+    const quantidadeHoras = parseFloat(IquantidadeHora.value) || 0;
+    const valorFinal = quantidadeHoras * 50; 
+
+    fetch("http://localhost:8080/salvarAgendamento", {
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json' 
     },
     method: "POST",
     body: JSON.stringify({
-        idIdoso: IidIdoso.value,
-        idAcompanhante: IidAcompanhante.value,
+        idIdoso: usuario.idIdoso,
+        idAcompanhante: idAcompanhante,
         quantidadeHora: IquantidadeHora.value,
-        valorHora: IvalorHora.value,
+        valorHora: valorFinal,
         local: Ilocal.value,
         dataContratacao: IdataContratacao.value,
-      
+        atividade: ''
     })
 })
-.then(function (res) { console.log(res) })
-.catch(function (res) { console.log(res) 
-    alert("Contratação realizada com sucesso!") })
+.then(function (res) { 
+    alert("Contratação realizada com sucesso!") 
+})
+.catch(function (res) {
+    alert("Erro ao realizar contratação.");
+})
 }
-
-function limpar () {
-IidIdoso.value = "";
-IidAcompanhante.value = "";
-IquantidadeHora.value = "";
-IvalorHora.value = "";
-Ilocal.value = "";
-IdataContratacao.value = "";
-};
 
 function carregarDadosIdoso() {
     var urlParams = new URLSearchParams(window.location.search);
     var idParam = urlParams.get('id');
-    if (idParam !== null) {
-        console.log('Valor do parâmetro "id":', idParam);
-    } else {
-        console.log('Parâmetro "id" não encontrado na URL.');
-        return
-    }    
-    var acompanhante;
+
     const url = 'http://localhost:8080/mostrarAcompanhantes/'+idParam;
 
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        console.log(data)
         exibirDadosAcompanhante(data);
     })
     .catch(error => {
@@ -87,15 +70,6 @@ function exibirDadosAcompanhante(acompanhante){
 }
 
 document.addEventListener('submit', function (event) {
-event.preventDefault();
-
-contratar();
-limpar();
+    event.preventDefault();
+    contratar();
 });
-
-
-
-
-
-
-
