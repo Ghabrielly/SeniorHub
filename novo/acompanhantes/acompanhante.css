@@ -106,41 +106,7 @@ a {
     width: 100%;
     font-family: sans-serif;
     font-size: large;
-
-}
-
-#hobbie {
-    height: 10%;
-    width: 90%;
-    font-family: sans-serif;
-    font-size: large;
-
-}
-
-#describe {
-    height: 25%;
-    width: 100%;
-    font-family: sans-serif;
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#describe span {
-    border: 1px black solid;
-    height: 80%;
-    width: 90%;
-    border-radius: 5px;
-}
-
-
-#age,
-#hobbie {
-    display: flex;
-    align-items: row;
-    align-items: center;
-    padding-left: 10px;
+    background-color: red;
 }
 
 #eita {
@@ -179,19 +145,22 @@ a {
     display: flex;
     width: auto;
     height: auto;
-    
+    list-style: none;
+    padding-left: 5px;
+
 }
 
 #sobre {
     display: flex;
     height: auto;
     padding: 10px;
-    
+    border: #080c4c 1px solid;
+    text-align: justify;
 }
 
 #telinha {
     height: 100%;
-    width: auto;
+    width: 17.5vw;
     display: flex;
     flex-direction: column;
     border: 1px black solid;
@@ -199,4 +168,54 @@ a {
     margin-top: 10px;
     border-radius: 5px;
     padding: 10px;
+    margin-right: 10px;
+    align-content: stretch;
+}
+
+#describe {
+    margin-top: 10px;
+    height: 90%;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#describe span {
+    display: flex;
+    border: 1px black solid;
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+
+}
+
+#describe label {
+    display: flex;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+#hobbie {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: large;
+    border: #080c4c 1px solid;
+}
+
+#hobbie span {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+
+}
+
+#hobbie label {
+    display: flex;
 }
