@@ -135,16 +135,40 @@ p {
 
 
 #foto1 {
-    height: 250px;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 #foto2 {
-    height: 210px;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 #foto3 {
-    height: 210px;
-    width: auto;
+    border: #080c4c 1px solid;
+    height: auto;
+    width: 100%;
+}
+
+.fotodafoto1 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+#fotodafoto2 {
+    border: #080c4c 1px solid;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+#fotodafoto3 {
+    border: #080c4c 1px solid;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
 }

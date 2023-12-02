@@ -11,7 +11,6 @@ const Iendereco = document.querySelector("#endereco");
 const Ihobbie = document.querySelector("#Hobbie");
 const Isupor = document.querySelector("#supo");
 const Isuporte = document.querySelector("#Suporte");
-const Icpf = document.querySelector("#cpf");
 const Isenha = document.querySelector("#senha");
 
 function cadastrar() {
@@ -36,7 +35,6 @@ function cadastrar() {
             endereco: Iendereco.value,
             hobbie:Ihobbie.value,
             senha: Isenha.value,
-			cpf: Icpf.value,
         })
     })
     .then(function (res) { 
@@ -50,7 +48,7 @@ function cadastrar() {
 
 function limpar () {
 	Inome.value = "";
-	Isuario.value = "";
+	Iusuario.value = "";
 	Iemail.value = "";
 	Itelefone.value = "";
 	Inascimento.value = "";
