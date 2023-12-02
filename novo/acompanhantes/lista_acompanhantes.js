@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>            
         </div>
         <div id="eita">
-            <div id="bot"><a id="but1" href="../contratando/?id=${provider.idAcompanhante}">Contratar</a></div>
+            <div id="bot"><a id="but1" href="../contratando/index.html?id=${provider.idAcompanhante}">Contratar</a></div>
         </div>`;
             providerListElement.appendChild(listItem);
         });
