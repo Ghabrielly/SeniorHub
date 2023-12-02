@@ -262,7 +262,7 @@ a {text-decoration: none;}
  display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
