@@ -171,11 +171,13 @@ a {
 #telinha {
     width: 20rem;
     margin-left: 6rem;
-    background-color: #cfd3fd;
+    background-color: white;
     align-items: center;
     justify-content: center;
     border: #080c4c 1px solid;
     border-radius: 15px;
+    box-shadow: 10px 5px 5px rgb(136, 136, 136);
+    /*box-shadow: inset 0 0 1em rgb(127, 127, 127);*/
 }
 
 #describe {
