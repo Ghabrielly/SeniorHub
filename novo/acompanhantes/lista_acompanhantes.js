@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         acompanhantes.forEach(provider => {
             const listItem = document.createElement('li');
+
+            listItem.id = 'cardAcompanhante';
+
             listItem.innerHTML = `<div id="telinha">
             <div id="foto"> <img src="../Logos png/seniorHubLogoAzulClaroEscuro.svg" alt=""></div>
             
