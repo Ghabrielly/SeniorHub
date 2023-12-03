@@ -101,7 +101,7 @@ a {text-decoration: none;}
     flex-direction: column;
     height: 80%;
     width: 20%;
-    background-color: #ccddfc;
+    background-color: #cfd3fd;
     border: black 1px solid;
     border-radius: 10px;
     margin-left: 10px;
@@ -193,7 +193,7 @@ a {text-decoration: none;}
     justify-content: center;
     font-size: large;
     font-family: sans-serif;
-    background-color: #ccddfc;
+    background-color: #cfd3fd;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
