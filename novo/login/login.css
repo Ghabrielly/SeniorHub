@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 a {text-decoration: none;}
@@ -70,6 +71,7 @@ a {text-decoration: none;}
         flex-direction: column;
         height: calc(100vh - 110px);
         width: auto;
+        font-family: sans-serif;
     }
 
     #tronco {
@@ -227,9 +229,12 @@ h1 {
     align-items: center;
 }
 
+
 #escolhendo label{
     font-size: medium;
     font-family: sans-serif;
+    height: 13px;
+    width: auto;
 }
 
 #escolhendo select{
