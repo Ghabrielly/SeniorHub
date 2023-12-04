@@ -6,6 +6,7 @@ body {
     width: 320px;
     height: 350px;
     margin-top: 20px;
+    
 }
 
 
@@ -100,9 +101,11 @@ a {text-decoration: none;}
 .eventos img {
     max-width: 150%;
     height: auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4vw;
 }
 
 .container {
@@ -151,6 +154,9 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 50vw;
+    margin-left: 90px;
+    border-left: #080c4c 1px solid;
 }
 
 .detalhesdois {
@@ -169,4 +175,14 @@ h2 {
 }
 h1 {
     font-family: sans-serif;
+}
+
+#foto1 {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.eventos p {
+    font-size: 23px;
 }

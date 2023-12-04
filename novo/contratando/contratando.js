@@ -20,6 +20,7 @@ const IquantidadeHora = document.querySelector("#qntd_hora");
 const valorHora = document.querySelector("#qntd_hora");
 const Ilocal = document.querySelector("#local");
 const IdataContratacao = document.querySelector("#data");
+const Iatividade = document.querySelector("#atividade");
 
 function contratar() {
     const quantidadeHoras = parseFloat(IquantidadeHora.value) || 0;
@@ -38,7 +39,7 @@ function contratar() {
         valorHora: valorFinal,
         local: Ilocal.value,
         dataContratacao: IdataContratacao.value,
-        atividade: ''
+        atividade: Iatividade.value,
     })
 })
 .then(function (res) { 
