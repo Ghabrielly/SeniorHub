@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 });
 
 const Inome = document.querySelector("#nome");
 const Iusuario = document.querySelector("#usuario");
 const Iemail = document.querySelector("#email");
 const Itelefone = document.querySelector("#telefone");
-const Inascimento= document.querySelector("#nascimento");
+const Inascimento = document.querySelector("#nascimento");
 const Igenero = document.querySelector("#genero");
 const Iendereco = document.querySelector("#endereco");
 const Ihobbie = document.querySelector("#Hobbie");
@@ -13,17 +13,17 @@ const Icertificado = document.querySelector("#especializacao");
 const Icpf = document.querySelector("#cpf");
 const Isenha = document.querySelector("#senha");
 const Idescricao = document.querySelector("#sobre");
-	
+
 function cadastrar() {
     var sexo = 0;
-	if(Igenero.value == 'masculino'){
-		sexo = 1;
-	}
+    if (Igenero.value == 'masculino') {
+        sexo = 1;
+    }
 
     fetch("http://localhost:8080/salvarAcompanhante", {
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json' 
+            'Content-Type': 'application/json'
         },
         method: "POST",
         body: JSON.stringify({
@@ -34,31 +34,31 @@ function cadastrar() {
             nasc: Inascimento.value,
             genero: sexo,
             endereco: Iendereco.value,
-            hobbies:Ihobbie.value,
+            hobbies: Ihobbie.value,
             certificado: Icertificado.value,
             senha: Isenha.value,
             cpf: Icpf.value,
             descricao: Idescricao.value,
         })
     })
-    .then(function (res) {
-         console.log(res) 
-         alert("Acompanhante Cadastrado!")
+        .then(function (res) {
+            console.log(res)
+            alert("Acompanhante Cadastrado!")
         })
-    .catch(function (res) {
-         console.log(res) 
+        .catch(function (res) {
+            console.log(res)
         })
-    }
+}
 
-    function limpar () {
-        Inome.value = "";
-        Iusuario.value = "";
-        Iemail.value = "";
-        Itelefone.value = "";
-        Inascimento.value = "";
-        Igenero.value = "";
-        Iendereco.value = "";
-        Ihobbie.value = "";
-        Icertificado.value = "";
-        Isenha.value = "";
-        };
+function limpar() {
+    Inome.value = "";
+    Iusuario.value = "";
+    Iemail.value = "";
+    Itelefone.value = "";
+    Inascimento.value = "";
+    Igenero.value = "";
+    Iendereco.value = "";
+    Ihobbie.value = "";
+    Icertificado.value = "";
+    Isenha.value = "";
+};
