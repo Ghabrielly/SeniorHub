@@ -46,4 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     carregarListaAcompanhantes();
+
+    const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+    if (!usuario) {
+        window.location.href = "../login";
+    }
 });

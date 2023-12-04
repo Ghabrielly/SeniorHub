@@ -29,6 +29,12 @@ public class AgendamentoControlador {
         List<Agendamento> lista = agendamentoRepositorio.findAll();
         return ResponseEntity.ok().body(lista);
     }
+    
+    @GetMapping("/ultimoAgendamento/{id}")
+    public ResponseEntity<Agendamento> ultimoAgendamento(@PathVariable String id){
+    	Agendamento agendamento = agendamentoRepositorio.findUltimoAgendamento(id);
+        return ResponseEntity.ok().body(agendamento);
+    }
 
     @GetMapping("/mostrarAgendamentos/{id}")
     public ResponseEntity<Optional<Agendamento>> mostrarAgendamentoId(@PathVariable Long id){

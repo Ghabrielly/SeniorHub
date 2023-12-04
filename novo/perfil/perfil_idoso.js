@@ -17,12 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('hobbie').innerText = idoso.hobbie;
     }
 
+    const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+    if (!usuario) {
+        window.location.href = "../login";
+    }
+
     carregarDadosIdoso();
+
 });
 
 const usuario = JSON.parse(sessionStorage.getItem('usuario'));
 if (!usuario) {
-    //window.location.href = "../login";
+    window.location.href = "../login";
 } else {
     if (usuario.idAcompanhante) {
         var menu = document.getElementById("eventos")

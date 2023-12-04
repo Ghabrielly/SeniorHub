@@ -43,6 +43,7 @@ function contratar() {
 })
 .then(function (res) { 
     alert("Contratação realizada com sucesso!") 
+    window.location.href = "../agendado";
 })
 .catch(function (res) {
     alert("Erro ao realizar contratação.");
