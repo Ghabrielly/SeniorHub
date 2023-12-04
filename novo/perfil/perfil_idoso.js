@@ -42,3 +42,10 @@ if (!usuario) {
         menu.remove()
     }
 }
+
+if (usuario.idAcompanhante) {
+    var menu = document.getElementById("bot")
+    if (menu) {
+        menu.remove()
+    }
+}
