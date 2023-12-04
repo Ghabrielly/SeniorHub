@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('telefone').innerText = idoso.telefone;
         //document.getElementById('nascimento').innerText = idoso.nasc;
         document.getElementById('hobbie').innerText = idoso.hobbies;
-        const dataContratacao = new Date(idoso.nasc);
+        document.getElementById('hobbie').innerText = idoso.hobbie;
+        const dataContratacao = new Date(idoso.nasc) | Date(idoso.nascimento);
         const dia = dataContratacao.getDate();
         const mes = dataContratacao.getMonth() + 1;
         const ano = dataContratacao.getFullYear();

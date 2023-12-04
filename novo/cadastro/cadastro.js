@@ -12,6 +12,7 @@ const Ihobbie = document.querySelector("#Hobbie");
 const Isupor = document.querySelector("#supo");
 const Isuporte = document.querySelector("#Suporte");
 const Isenha = document.querySelector("#senha");
+const Icpf = document.querySelector("#cpf");
 
 function cadastrar() {
 	var sexo = 0;
@@ -35,6 +36,7 @@ function cadastrar() {
             endereco: Iendereco.value,
             hobbie:Ihobbie.value,
             senha: Isenha.value,
+			cpf: Icpf.value,
         })
     })
     .then(function (res) { 
