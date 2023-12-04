@@ -40,8 +40,8 @@ function cadastrar() {
         })
     })
     .then(function (res) { 
-		console.log(res)
 		alert("Idoso cadastrado com sucesso!");
+		window.location.href = "../login/index.html";
 	})
     .catch(function (res) { 
 		console.log(res) 

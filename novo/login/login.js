@@ -19,14 +19,16 @@ function fazerLogin() {
     .then(response => {
         if (response.ok) {
             return response.json();
-        } else {
-            alert('Login ou senha incorretos. Tente novamente.');
         }
     })
     .then(data => {
-        sessionStorage.setItem('usuario', JSON.stringify(data));
-        alert('Login bem-sucedido!');
-        window.location.href = "../inicio/inicio.html";
+        if(data){
+            sessionStorage.setItem('usuario', JSON.stringify(data));
+            alert('Login bem-sucedido!');
+            window.location.href = "../inicio/inicio.html";
+        }else{
+            alert('Login ou senha incorretos. Tente novamente.');
+        }        
     })
     .catch(error => {
         console.error('Erro ao fazer login:', error);

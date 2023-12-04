@@ -42,8 +42,8 @@ function cadastrar() {
         })
     })
         .then(function (res) {
-            console.log(res)
             alert("Acompanhante Cadastrado!")
+            window.location.href = "../login/index.html";
         })
         .catch(function (res) {
             console.log(res)
