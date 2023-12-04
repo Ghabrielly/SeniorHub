@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('endereco').innerText = idoso.endereco;
         document.getElementById('cpf').innerText = idoso.cpf;
         document.getElementById('telefone').innerText = idoso.telefone;
-        //document.getElementById('nascimento').innerText = idoso.nasc;
+        document.getElementById('nascimento').innerText = idoso.nasc;
         document.getElementById('hobbie').innerText = idoso.hobbies;
         document.getElementById('hobbie').innerText = idoso.hobbie;
         const dataContratacao = new Date(idoso.nasc) | Date(idoso.nascimento);
@@ -33,14 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// function exibirDadosIdoso(idoso) {
-//     const dataContratacao = new Date(agendamento.dataContratacao);
-//     const dia = dataContratacao.getDate();
-//     const mes = dataContratacao.getMonth() + 1;
-//     const ano = dataContratacao.getFullYear();
-//     const dataFormatada = `${dia}/${mes}/${ano}`;
-//     document.getElementById('data').innerText = dataFormatada;
-// }
+function exibirDadosIdoso(idoso) {
+     const dataContratacao = new Date(agendamento.dataContratacao);
+     const dia = dataContratacao.getDate();
+    const mes = dataContratacao.getMonth() + 1;
+    const ano = dataContratacao.getFullYear();
+     const dataFormatada = `${dia}/${mes}/${ano}`;
+     document.getElementById('data').innerText = dataFormatada;
+ }
 
 const usuario = JSON.parse(sessionStorage.getItem('usuario'));
 if (!usuario) {
@@ -59,9 +59,3 @@ if (!usuario) {
     }
 }
 
-if (usuario.idAcompanhante) {
-    var menu = document.getElementById("bot")
-    if (menu) {
-        menu.remove()
-    }
-}

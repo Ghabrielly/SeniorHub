@@ -151,3 +151,14 @@ font-family: sans-serif;
 p{font-size: 18px;
 
 }
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    background-image: url("casal.jpg");
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+	background-size: cover;
+    background-position: center -90px;
+}

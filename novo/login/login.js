@@ -20,7 +20,7 @@ function fazerLogin() {
         if (response.ok) {
             return response.json();
         } else {
-            throw new Error('Login ou senha incorretos. Tente novamente.');
+            alert('Login ou senha incorretos. Tente novamente.');
         }
     })
     .then(data => {
