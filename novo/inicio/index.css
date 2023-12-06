@@ -156,7 +156,7 @@ p{font-size: 18px;
     display: flex;
     flex-direction: row;
     background-image: url("casal.jpg");
-    height: 400px;
+    height: 70vh;
     align-items: center;
     justify-content: space-evenly;
 	background-size: cover;
